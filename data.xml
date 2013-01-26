@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <header>SublimeText2</header>
+    <data>
+        <section align="left">
+            <title>File</title>
+            <item>
+                <key>:w</key>
+                <description>Save file</description>
+            </item>
+            <item>
+                <key>:q</key>
+                <description>Close file</description>
+            </item>
+        </section>
+        <section align="center">
+            <title>Layout</title>
+            <item>
+                <key>alt+shift+1~4</key>
+                <description>Vertical split layout</description>
+            </item>
+        </section>
+        <section align="right">
+            <title>Mode</title>
+            <item>
+                <key>esc</key>
+                <description>Exit</description>
+            </item>
+            <item>
+                <key>i</key>
+                <description>Insert Mode</description>
+            </item>
+            <item>
+                <key>v</key>
+                <description>Visual Mode</description>
+            </item>
+        </section>
+        <section align="right">
+            <title>Cursor</title>
+            <item>
+                <key>k</key>
+                <description>Up</description>
+            </item>
+            <item>
+                <key>l</key>
+                <description>Right</description>
+            </item>
+            <item>
+                <key>j</key>
+                <description>Down</description>
+            </item>
+            <item>
+                <key>h</key>
+                <description>Left</description>
+            </item>
+        </section>
+    </data>
+</root>
