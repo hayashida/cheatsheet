@@ -44,14 +44,13 @@ class dataXml
             inner = $("<div>").addClass("accordion-inner")
 
             sections = $("<dl>")
-            $(this).children("item").each ->
+            for item in $(this).children("item")
                 key = $("<dd>")
-                        .text($(this).children("key").text())
+                        .text($(item).children("key").text())
                 desc = $("<dt>")
-                        .text($(this).children("description").text())
+                        .text($(item).children("description").text())
 
                 sections.append(desc).append(key)
-                return
 
             header.append(link)
             group.append(header)

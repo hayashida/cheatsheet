@@ -27,7 +27,7 @@
       header = $(xml).find("header").text();
       $(".brand").prepend(header + " - ");
       make = function() {
-        var body, group, id, inner, layout, link, sections, title;
+        var body, desc, group, id, inner, item, key, layout, link, sections, title, _i, _len, _ref;
         layout = $(this).attr("align");
         group = $("<div>").addClass("accordion-group");
         header = $("<div>").addClass("accordion-heading");
@@ -43,12 +43,13 @@
         }).addClass("accordion-body").addClass("collapse").addClass("in");
         inner = $("<div>").addClass("accordion-inner");
         sections = $("<dl>");
-        $(this).children("item").each(function() {
-          var desc, key;
-          key = $("<dd>").text($(this).children("key").text());
-          desc = $("<dt>").text($(this).children("description").text());
+        _ref = $(this).children("item");
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          item = _ref[_i];
+          key = $("<dd>").text($(item).children("key").text());
+          desc = $("<dt>").text($(item).children("description").text());
           sections.append(desc).append(key);
-        });
+        }
         header.append(link);
         group.append(header);
         inner.append(sections);
